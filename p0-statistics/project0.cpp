@@ -1,5 +1,5 @@
 // TODO: Add project identifier
-
+// Project Identifier: 39E995D00DDE0519FDF5506EED902869AEC1C39E
 // EECS 281: Project 0
 // Learn about:
 //   1) Command-line processing with getopt_long()
