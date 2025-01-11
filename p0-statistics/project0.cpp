@@ -168,7 +168,11 @@ void readWithReserve(vector<double> &data) {
 void readWithNoSize(vector<double> &data) {
     // TODO: DELETE the following line of code when you write
     // this function!  It is only here so that the file compiles.
-    (void) data;
+    //(void) data;
+    double temp;
+    while (cin>>temp){
+        data.push_back(temp);
+    }
 
 }  // readWithNoSize()
 

@@ -10,11 +10,11 @@
             "name": "Debug",
             "program": "${workspaceFolder}/project0_debug",
             "args": [
-                "-m", "resize"
+                "--mode", "nosize"
             ],
             "cwd": "${workspaceFolder}",
             "stdio": [
-                "sample-r.txt"
+                "sample-n.txt"
             ]
         }
     ]
