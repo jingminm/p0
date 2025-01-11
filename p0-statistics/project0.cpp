@@ -154,7 +154,7 @@ void readWithReserve(vector<double> &data) {
     //uninitialied value
     //instead we should use push_back
     for(size_t i = 0; i<size; i++){
-        size_t temp;
+        double temp;
         cin>>temp;
         data.push_back(temp);
     }

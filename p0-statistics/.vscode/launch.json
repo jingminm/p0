@@ -10,7 +10,7 @@
             "name": "Debug",
             "program": "${workspaceFolder}/project0_debug",
             "args": [
-                "-m", "reserve"
+                "-m", "resize"
             ],
             "cwd": "${workspaceFolder}",
             "stdio": [
