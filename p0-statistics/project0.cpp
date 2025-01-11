@@ -58,12 +58,15 @@ void getOptions(int argc, char **argv, Options &options) {
     // NOLINTBEGIN: getopt is old C code predating C++ style, this usage is from `man getopt`
     option longOptions[] = {
   // TODO: Insert two lines for the "mode" ('m') and the "help" ('h') options.
-        {nullptr, 0, nullptr, '\0'},
+        {"mode" , required_argument, nullptr, 'm' },
+        {"help" , no_argument      , nullptr, 'h' },
+        {nullptr, 0                , nullptr, '\0'}
+        
     };  // longOptions[]
     // NOLINTEND
 
-    // TODO: Fill in the double quotes, to match the mode and help options.
-    while ((choice = getopt_long(argc, argv, "", static_cast<option *>(longOptions), &index)) != -1) {
+    // TODO: Fill in the double quotes, to match the mode and help options.(m has a ":" because it requires argument)
+    while ((choice = getopt_long(argc, argv, "m:h", static_cast<option *>(longOptions), &index)) != -1) {
         switch (choice) {
         case 'h':
             printHelp(*argv);
@@ -113,7 +116,8 @@ void getOptions(int argc, char **argv, Options &options) {
 void readWithResize(vector<double> &data) {
     // TODO: DELETE the following line of code when you write
     // this function!  It is only here so that the file compiles.
-    (void) data;
+    //(void) data;
+    
 
 }  // readWithResize()
 
