@@ -117,7 +117,17 @@ void readWithResize(vector<double> &data) {
     // TODO: DELETE the following line of code when you write
     // this function!  It is only here so that the file compiles.
     //(void) data;
-    
+    // step 1
+    size_t size;
+    cin>>size;
+
+    //step 2
+    data.resize(size);
+
+    //step 3
+    for(size_t i = 0; i < size; i++){
+        cin>>data[i];
+    }
 
 }  // readWithResize()
 
