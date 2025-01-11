@@ -170,7 +170,7 @@ void readWithNoSize(vector<double> &data) {
     // this function!  It is only here so that the file compiles.
     //(void) data;
     double temp;
-    while (cin>>temp){
+    while (cin >> temp){
         data.push_back(temp);
     }
 
