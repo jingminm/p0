@@ -140,7 +140,24 @@ void readWithResize(vector<double> &data) {
 void readWithReserve(vector<double> &data) {
     // TODO: DELETE the following line of code when you write
     // this function!  It is only here so that the file compiles.
-    (void) data;
+    // (void) data;
+
+    //step 1
+    size_t size;
+    cin>>size;
+
+    //step 2
+    data.reserve(size);
+
+    //step 3
+    //cant directly read into each index since it will be accessing 
+    //uninitialied value
+    //instead we should use push_back
+    for(size_t i = 0; i<size; i++){
+        size_t temp;
+        cin>>temp;
+        data.push_back(temp);
+    }
 
 }  // readWithReserve()
 
